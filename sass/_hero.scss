@@ -401,7 +401,7 @@
 // Bubbles
 .bubbles {
   position: absolute;
-  width: 99vh;
+  width: 99vw;
   height: 501px;
   overflow: hidden;
 }
@@ -894,11 +894,6 @@
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .bubles {
-    width: 130vh;
-  }
-}
 @keyframes gradient {
   0% {
     background-position: 0 50%;
