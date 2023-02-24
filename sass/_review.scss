@@ -1,0 +1,135 @@
+/* This is the stilization for the review section */
+
+// The gallery div of the section
+.gallery__list {
+  display: flex;
+  gap: 3px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    img {
+      width: 44px;
+      height: 44px;
+    }
+    .wierd__image {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.gallery__list__item {
+  &:first-child {
+    position: relative;
+    top: 25px;
+  }
+  &:nth-child(3) {
+    position: relative;
+    top: -25px;
+  }
+  &:nth-child(5) {
+    position: relative;
+    top: -15px;
+  }
+  &:nth-child(6) {
+    position: relative;
+    top: 25px;
+  }
+}
+
+.gallery {
+  position: relative;
+  top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery__list {
+    gap: 6px;
+    &__list {
+      gap: 6px;
+    }
+    img {
+      width: 105px;
+      height: 105px;
+    }
+    .wierd__image {
+      width: 215px;
+      height: 215px;
+    }
+  }
+  .gallery__list__item {
+    &:first-child {
+      position: relative;
+      top: 50px;
+    }
+    &:nth-child(3) {
+      position: relative;
+      top: -50px;
+    }
+    &:nth-child(5) {
+      position: relative;
+      top: -30px;
+    }
+    &:nth-child(6) {
+      position: relative;
+      top: 50px;
+    }
+  }
+
+  .gallery {
+    position: relative;
+    top: -20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    max-width: 1013px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery__list {
+    gap: 8px;
+    &__list {
+      gap: 8px;
+    }
+    img {
+      width: 138px;
+      height: 138px;
+    }
+    .wierd__image {
+      width: 238px;
+      height: 238px;
+    }
+  }
+  .gallery__list__item {
+    &:first-child {
+      position: relative;
+      top: 70px;
+    }
+    &:nth-child(3) {
+      position: relative;
+      top: -70px;
+    }
+    &:nth-child(5) {
+      position: relative;
+      top: -40px;
+    }
+    &:nth-child(6) {
+      position: relative;
+      top: 70px;
+    }
+  }
+
+  .gallery {
+    position: relative;
+    top: -40px;
+  }
+}
