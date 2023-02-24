@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>IceCream</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <title>IceCream grupa 3</title>
+
+    <link rel="stylesheet" href="../css/main.min.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
-    <section class="hero">
+    <!-- Hero section -->
+    <section class="hero hero__about">
+      <!-- Bubbles -->
       <div class="bubbles">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -99,127 +112,37 @@
           <nav>
             <ul class="header__nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="./aboutUs.html">About us</a></li>
+              <li><a href="aboutUs.html">About us</a></li>
               <li><a href="">How it’s made?</a></li>
               <li><a href="">Our products</a></li>
               <li><a href="">Contact</a></li>
             </ul>
           </nav>
-          <button
-            class="button--nav menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
+          <button class="button--nav">
             <svg class="nav--icon">
-              <use href="./images/svg/symbol-defs.svg#icon-nav-button"></use>
+              <use
+                href="./images/Vlad/svg/symbol-defs.svg#icon-nav-button"
+              ></use>
             </svg>
           </button>
-          <button class="button header__button" type="button" data-modal-open>
+          <button class="button header__button">
             Buy now
             <svg class="header__button__icon">
-              <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
+              <use href="./images/Vlad/svg/symbol-defs.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </header>
       <!-- Hero section -->
       <div class="hero__inner container">
-        <div class="hero__inner--left">
           <h1 class="hero__title">
-            ice cream made with
-            <span class="hero__title--span">passion</span>
+            <span class="hero__title--span">About Us</span>
           </h1>
-          <ul class="hero__inner__list">
-            <li><button class="button button--red">Products</button></li>
-            <li>
-              <button class="button button--white">How it’s made?</button>
-            </li>
-          </ul>
           <div class="hero__inner--left--div">
             <div class="hero__inner--left--img"></div>
-            <div>
-              <p class="hero__inner--text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et
-              </p>
-              <a class="hero__inner--link">
-                <svg class="hero__inner--icon">
-                  <use href="./images/svg/symbol-defs.svg#icon-vector"></use>
-                </svg>
-              </a>
-            </div>
           </div>
-        </div>
         <!-- Circle and photo div -->
         <div class="hero__circle"></div>
-        <div class="hero__photo"></div>
-        <!-- End of circle and photo div -->
-        <div class="hero__inner--right">
-          <div class="hero__inner--right--div">
-            <div class="hero__circle--small"></div>
-            <p class="hero__inner--number">16</p>
-            <p class="hero__inner--fresh">cafes</p>
-          </div>
-          <div class="hero__inner--right--div">
-            <div class="hero__circle--small"></div>
-            <p class="hero__inner--number">23</p>
-            <p class="hero__inner--fresh">food trucks</p>
-          </div>
-          <div class="hero__right--image"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Products section -->
-    <section class="container products">
-      <h3 class="subtitle efect">100% natural</h3>
-      <h2 class="title efect">products</h2>
-      <ul class="products__list">
-        <li class="products__list__item">
-          <div class="products__image"></div>
-          <h3 class="subtitle">ice cream</h3>
-          <p class="subtitle">...</p>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et. dolore magna aliqua
-            facilisis.
-          </p>
-          <button class="products__button">
-            <svg>
-              <use href="./images/svg/symbol-defs.svg#icon-vector"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="products__list__item">
-          <div class="products__image products__image2"></div>
-          <h3 class="subtitle">ice cream</h3>
-          <p class="subtitle">...</p>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et. dolore magna aliqua
-            facilisis.
-          </p>
-          <button class="products__button">
-            <svg>
-              <use href="./images/svg/symbol-defs.svg#icon-vector"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="products__list__item">
-          <div class="products__image products__image3"></div>
-          <h3 class="subtitle">ice cream</h3>
-          <p class="subtitle">...</p>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et. dolore magna aliqua
-            facilisis.
-          </p>
-          <button class="products__button">
-            <svg>
-              <use href="./images/svg/symbol-defs.svg#icon-vector"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
     </section>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="js-close-menu close-menu">
@@ -248,26 +171,27 @@
           <a class="link" href="index.html"> Home </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href="./aboutUs.html"> About us </a>
+          <a class="link" href="aboutUs.html"> About us </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href=""> How it’s made? </a>
+          <a class="link" href="contacts.html"> How it’s made? </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href=""> Our products </a>
+          <a class="link" href="contacts.html"> Our products </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link" href=""> Contact </a>
+          <a class="link" href="contacts.html"> Contact </a>
         </li>
       </ul>
     </div>
+    <!--JS Files-->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/heroMobileMenu.js"></script>
+    <script src="./js/heroModal.js"></script>
   </body>
 </html>
