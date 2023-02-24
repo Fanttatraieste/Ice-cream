@@ -5,13 +5,17 @@
   gap: 15px;
   margin-top: 60px;
   margin-bottom: 60px;
-
   &__list {
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 120px;
+    position: relative;
+    z-index: -1;
+    &:hover {
+      z-index: 1;
+    }
   }
   &__list__item {
     width: 100%;
