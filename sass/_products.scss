@@ -12,10 +12,6 @@
     justify-content: space-between;
     gap: 120px;
     position: relative;
-    z-index: -1;
-    &:hover {
-      z-index: 1;
-    }
   }
   &__list__item {
     width: 100%;

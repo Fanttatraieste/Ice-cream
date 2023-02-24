@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream grupa 3</title>
 
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,14 +118,18 @@
               <li><a href="">Contact</a></li>
             </ul>
           </nav>
-          <button class="button--nav">
+          <button 
+            class="button--nav menu-toggle js-open-menu" 
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="nav--icon">
               <use
                 href="./images/svg/symbol-defs.svg#icon-nav-button"
               ></use>
             </svg>
           </button>
-          <button class="button header__button">
+          <button class="button header__button" data-modal-open>
             Buy now
             <svg class="header__button__icon">
               <use href="./images/Vlad/svg/symbol-defs.svg#icon-arrow"></use>
@@ -159,7 +163,7 @@
         </svg>
       </button>
 
-      <button class="modal__button" type="button" data-modal-open1>
+      <button class="modal__button" type="button" data-modal-open>
         Buy now
         <svg class="header__button__icon">
           <use href="./images/svg/symbol-defs.svg#icon-arrow"></use>
@@ -191,7 +195,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/heroMobileMenu.js"></script>
-    <script src="./js/heroModal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

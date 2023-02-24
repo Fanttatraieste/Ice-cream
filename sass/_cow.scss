@@ -1,0 +1,130 @@
+/* Cow section */
+.cow {
+  background-color: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 209px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subtitle {
+    margin-bottom: 16px;
+  }
+  .title {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cow__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  img {
+    width: 280px;
+    height: 280px;
+  }
+  &__text1 {
+    color: black;
+    max-width: 220px;
+  }
+  &__text2 {
+    margin-top: 30px;
+    color: #907e82;
+    max-width: 220px;
+    margin-bottom: 40px;
+  }
+  &__button {
+    border: none;
+    border-radius: 22px;
+    background-color: var(--white-color);
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    margin-top: 20px;
+    padding: 14px 46px 14px 37px;
+    svg {
+      width: 5px;
+      height: 8px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.cow__list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  &__item {
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .text {
+      color: black;
+      text-align: center;
+    }
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cow {
+    .title {
+      max-width: 429px;
+    }
+  }
+
+  .cow__inner {
+    margin-top: 40px;
+    img {
+      width: 336px;
+      height: 336px;
+    }
+    & > div > .text {
+      max-width: 334px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cow__inner {
+    img {
+      width: 501px;
+      height: 501px;
+    }
+    & > div > .text {
+      max-width: 463px;
+    }
+    & > div {
+      margin-top: 70px;
+      margin-left: 50px;
+    }
+  }
+  .cow__list {
+    justify-content: space-around;
+  }
+}
