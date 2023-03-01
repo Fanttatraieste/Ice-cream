@@ -1,0 +1,308 @@
+//Goal stilization
+.goal {
+  background-color: var(--bg-color);
+  padding-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-color);
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 34px;
+    position: relative;
+    z-index: 5;
+  }
+  &__text {
+    text-align: center;
+    color: #212121;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+  }
+  &__image {
+    display: none;
+  }
+}
+
+.goal__list {
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
+  &__item {
+    width: 45%;
+    border: 1px solid var(--primary1-color);
+    border-radius: 20px;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 5;
+  }
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    color: #212121;
+  }
+  &__number {
+    color: #212121;
+    font-size: 26px;
+    text-align: center;
+  }
+  &__plus {
+    color: var(--brand-color);
+    position: relative;
+    bottom: 10px;
+  }
+  &__item:nth-child(2) {
+    position: relative;
+    top: 32px;
+  }
+  &__item:nth-child(4) {
+    position: relative;
+    top: 32px;
+  }
+}
+
+//Some style that shouldn't be here
+#aboutFooter {
+  padding-top: 50px;
+}
+//xaxaxaxaxa
+
+//Circles style
+
+.circle {
+  border-radius: 50%;
+  background-color: var(--primary1-color);
+  position: absolute;
+  z-index: -1;
+}
+
+.circle1 {
+  width: 30px;
+  height: 30px;
+  top: 40px;
+  right: -10px;
+}
+
+.circle2 {
+  width: 45px;
+  height: 45px;
+  bottom: 40px;
+  right: -15px;
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  top: 140px;
+  left: -40px;
+}
+
+.line-icon1 {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+.line-icon2 {
+  position: absolute;
+  bottom: -130px;
+  right: -80px;
+  height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .goal {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &__inner {
+      gap: 34px;
+    }
+    &__text {
+      font-size: 16px;
+      max-width: 350px;
+      left: 420px;
+    }
+  }
+
+  .goal__list {
+    gap: 32px;
+    max-width: 400px;
+    left: 150px;
+    bottom: 30px;
+    &__item {
+      gap: 16px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__number {
+      font-size: 32px;
+    }
+    &__plus {
+      bottom: 10px;
+      font-size: 26px;
+    }
+    &__item:nth-child(2) {
+      top: 42px;
+    }
+    &__item:nth-child(4) {
+      position: relative;
+      top: 42px;
+    }
+  }
+
+  //Some style that shouldn't be here
+  #aboutFooter {
+    padding-top: 0px;
+  }
+  //xaxaxaxaxa
+
+  //Circles style
+
+  .circle {
+    border-radius: 50%;
+    background-color: var(--primary1-color);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .circle1 {
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    right: -10px;
+  }
+
+  .circle2 {
+    width: 65px;
+    height: 65px;
+    bottom: 40px;
+    right: -15px;
+  }
+
+  .circle3 {
+    width: 120px;
+    height: 120px;
+    top: 140px;
+    left: -40px;
+  }
+
+  .line-icon1 {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+  }
+  .line-icon2 {
+    position: absolute;
+    bottom: -130px;
+    right: -80px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .goal {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &__inner {
+      gap: 34px;
+    }
+    &__text {
+      font-size: 16px;
+      max-width: 400px;
+      left: 720px;
+    }
+    &__image {
+      display: block;
+      width: 368px;
+      height: 394px;
+      background-image: url("../images/about/home-pic1goal.png");
+      position: absolute;
+      bottom: -100px;
+      left: 90px;
+    }
+  }
+
+  .goal__list {
+    gap: 32px;
+    max-width: 400px;
+    left: 450px;
+    bottom: 30px;
+    &__item {
+      gap: 16px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__number {
+      font-size: 32px;
+    }
+    &__plus {
+      bottom: 10px;
+      font-size: 26px;
+    }
+    &__item:nth-child(2) {
+      top: 50px;
+    }
+    &__item:nth-child(4) {
+      position: relative;
+      top: 50px;
+    }
+  }
+
+  //Some style that shouldn't be here
+  #aboutFooter {
+    padding-top: 0px;
+  }
+  //xaxaxaxaxa
+
+  //Circles style
+
+  .circle {
+    border-radius: 50%;
+    background-color: var(--primary1-color);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .circle1 {
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 50px;
+  }
+
+  .circle2 {
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+    right: 55px;
+  }
+
+  .circle3 {
+    width: 140px;
+    height: 140px;
+    top: 50px;
+    left: 40px;
+  }
+
+  .line-icon1 {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+  }
+  .line-icon2 {
+    position: absolute;
+    bottom: -130px;
+    right: -80px;
+    height: 400px;
+  }
+}

@@ -33,5 +33,11 @@
 <symbol id="icon-facebook" viewBox="0 0 16 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M14.266 15.97h-4.176v15.39h-6.327v-15.39h-3.009v-5.409h3.009v-3.5c0-2.503 1.182-6.422 6.384-6.422l4.687 0.020v5.25h-3.401c-0.558 0-1.342 0.28-1.342 1.474v3.183h4.729l-0.553 5.403z"></path>
 </symbol>
+<symbol id="icon-line-1" viewBox="0 0 19040 32">
+<path fill="none" stroke="#ffb8ca" style="stroke: var(--color1, #ffb8ca)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="32" d="M0 16h19200"></path>
+</symbol>
+<symbol id="icon-line-2" viewBox="0 0 20 40">
+<path fill="none" stroke="#ffb8ca" style="stroke: var(--color1, #ffb8ca)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="2" stroke-width="0.3" d="M29.364 0.348l-28.979 32"></path>
+</symbol>
 </defs>
 </svg>
